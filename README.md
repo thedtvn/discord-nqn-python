@@ -1,2 +1,4 @@
 # nqn-python
-Nó là chức năng nqn cho bot của bạn nếu cần :>
+Nó là cogs nqn cho bot của bạn nếu cần :>
+## requirements
+`pip install -r requirements.txt`
