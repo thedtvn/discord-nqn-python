@@ -77,11 +77,11 @@ class nqn(commands.Cog):
           if checkdata[-1].isdigit():
             tid = int(checkdata[-1])
             data = "".join(checkdata[:-1])
-          if data != "nit-nit":
+          if data != nqn_emoji_name:
             useremojilist = [e for i in message.author.mutual_guilds for e in i.emojis if
                              (e.name.lower() == data.lower() or e.name.lower() == realdata.lower()) and e.available]
           else:
-            useremojilist = [self.bot.get_emoji(945559369217638430)]
+            useremojilist = [self.bot.get_emoji(nqn_emoji_id)]
           if useremojilist:
             choice_emoji = random.choice(useremojilist)
             content = re.compile(f':{data}:', flags=re.IGNORECASE).sub(str(choice_emoji), content)
