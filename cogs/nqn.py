@@ -13,11 +13,6 @@ import re
 from discord.ext import commands
 import asyncio
 
-if discord.__version__ != '2.0.0a':
-  print("you need to update discord.py to use this cog")
-  print("\"pip install git+https://github.com/Rapptz/discord.py\"")
-  os._exit(1)
-
 nqn_emoji_name = "nqn-nqn" # Name of the emoji that will show up the nqn emoji
 nqn_emoji_id = "723880109898427914" #replace your bot nqn emoji id
 
