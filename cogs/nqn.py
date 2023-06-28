@@ -51,7 +51,7 @@ class nqn(commands.Cog):
             edited = True
 
       cpemoji = {}
-      cpe = re.compile(r'<a?:.+?:\d{18}>', flags=re.IGNORECASE).findall(content)
+      cpe = re.compile(r'<a?:.+?:\d*>', flags=re.IGNORECASE).findall(content)
       cpe = list(set(cpe))
       if cpe:
         for cpe_data in cpe:
